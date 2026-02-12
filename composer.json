@@ -36,19 +36,19 @@
     },
     "scripts": {
         "setup": [
-            "composer install",
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
-            "@php artisan key:generate",
-            "@php artisan migrate --force",
+            "composer install",
+            "@php artisan key:generate --ansi",
+            "@php artisan migrate --seed --force",
+            "@php artisan storage:link",
             "npm install",
             "npm run build"
         ],
         "dev": [
             "Composer\\Config::disableProcessTimeout",
-            "npx concurrently -c \"#93c5fd,#c4b5fd,#fb7185,#fdba74\" \"php artisan serve\" \"php artisan queue:listen --tries=1\" \"php artisan pail --timeout=0\" \"npm run dev\" --names=server,queue,logs,vite --kill-others"
+            "npx concurrentlly \"php artisan serve\" \"npm run dev\" \"php artisan pail\""
         ],
         "test": [
-            "@php artisan config:clear --ansi",
             "@php artisan test"
         ],
         "post-autoload-dump": [
