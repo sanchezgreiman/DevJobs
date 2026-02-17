@@ -1,5 +1,5 @@
-<div class="bg-gray-100 py-10">
-    <h2 class="text-2xl md:text-4xl text-gray-600 text-center font-extrabold my-5">Buscar y Filtrar Vacantes</h2>
+<div class="bg-gray-900 py-10">
+    <h2 class="text-2xl md:text-4xl text-white text-center font-extrabold my-5">Buscar y Filtrar Vacantes</h2>
 
     <div class="max-w-7xl mx-auto">
         <form
@@ -8,7 +8,7 @@
             <div class="md:grid md:grid-cols-3 gap-5">
                 <div class="mb-5">
                     <label 
-                        class="block mb-1 text-sm text-gray-700 uppercase font-bold "
+                        class="block mb-1 text-sm text-gray-300 uppercase font-bold "
                         for="termino">Término de Búsqueda
                     </label>
                     <input 
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="mb-5">
-                    <label class="block mb-1 text-sm text-gray-700 uppercase font-bold">Categoría</label>
+                    <label class="block mb-1 text-sm text-gray-300 uppercase font-bold">Categoría</label>
                     <select wire:model="categoria" class="border-gray-300 p-2 w-full">
                         <option>--Seleccione--</option>
             
@@ -33,7 +33,7 @@
                 </div>
 
                 <div class="mb-5">
-                    <label class="block mb-1 text-sm text-gray-700 uppercase font-bold">Salario Mensual</label>
+                    <label class="block mb-1 text-sm text-gray-300 uppercase font-bold">Salario Mensual</label>
                     <select wire:model="salario" class="border-gray-300 p-2 w-full">
                         <option>-- Seleccione --</option>
                         @foreach ($salarios as $salario)
