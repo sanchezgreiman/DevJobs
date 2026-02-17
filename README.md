@@ -3,6 +3,33 @@
 
 Plataforma de reclutamiento IT construida con **Laravel 11**, **Livewire 3** y **Tailwind CSS**.
 
+<h2 align="center">Vistas Reclutador</h2>
+
+<p align="center">
+  <img src="./img/crear-vacante.png" width="300"/>
+  <img src="./img/crear-vacante2.png" width="300"/>
+  <img src="./img/mis-vacantes.png" width="300"/>
+  <img src="./img/notificaciones.png" width="300"/>
+  <img src="./img/notificaciones-candidatos.png" width="300"/>
+  <img src="./img/notificaciones-correo.png" width="300"/>
+  <img src="./img/notificaciones-correo2.png" width="300"/>
+</p>
+
+<h2 align="center">Vistas Candidato</h2>
+
+<p align="center">
+   <img src="./img/home.png" width="300"/>
+   <img src="./img/home2.png" width="300"/>
+   <img src="./img/ver-vacante.png" width="300"/>
+</p>
+
+<h2 align="center">Edicion de Perfil</h2>
+
+<p align="center">
+   <img src="./img/perfil.png" width="300"/>
+   <img src="./img/perfil2.png" width="300"/>
+<p>
+
 ## Funcionalidades principales
 
 - Registro y autenticación con Laravel Breeze
@@ -19,6 +46,7 @@ Plataforma de reclutamiento IT construida con **Laravel 11**, **Livewire 3** y *
 - Composer
 - Node.js y npm
 - MySQL
+- MailHog
 
 ## Instalación
 
@@ -52,13 +80,20 @@ Inicia simultáneamente:
 - Servidor Laravel (`php artisan serve`)
 - Compilación en tiempo real con Vite (Hot Reload)
 
-### Tests
+### Envío de Correos (Mailhog)
 
-```bash
-composer test
-```
+Este proyecto utiliza **Mailhog** para capturar los correos electrónicos en el entorno de desarrollo. 
 
-Ejecuta los tests automatizados del proyecto.
+1. **Asegúrate de tener Mailhog instalado y corriendo.**
+   - Si usas Docker: `docker run -d -p 1025:1025 -p 8025:8025 mailhog/mailhog`
+   - Si lo instalaste vía Brew/Directo: solo `mailhog` en la terminal, dentro del proyecto
+2. **Configuración en `.env`:**
+   ```env
+   MAIL_MAILER=smtp
+   MAIL_HOST=127.0.0.1
+   MAIL_PORT=1025
+3. **Ver correos:**
+   - Accede a http://localhost:8025 para ver la bandeja de entrada de prueba.
 
 ## Estructura de Almacenamiento
 
@@ -79,7 +114,3 @@ Se acceden vía `/storage/...` gracias al symlink creado por `php artisan storag
 - **Policies de Laravel:** Implementación de políticas de acceso para asegurar que solo el creador de una vacante pueda gestionar a sus candidatos.
 - **Middlewares Personalizados:** Restricción de acceso a funciones de reclutador mediante el middleware `RolUsuario`.
 - **Validación de Archivos:** Reglas estrictas para la subida de CVs, limitando extensiones (PDF) y tamaños de archivo.
-
-## Licencia
-
-MIT
