@@ -30,7 +30,7 @@ class EditarVacante extends Component
         'empresa' => 'required',
         'ultimo_dia' => 'required',
         'descripcion' => 'required',
-        'imagen_nueva' => 'nullable|image|max:1024'
+        'imagen_nueva' => 'nullable|image|max:5024'
         ];
 
     public function mount(Vacante $vacante)
