@@ -5,30 +5,36 @@ Plataforma de reclutamiento IT construida con **Laravel 11**, **Livewire 3** y *
 
 <h2 align="center">Vistas Reclutador</h2>
 
-<p align="center">
-  <img src="./img/reclutador/crear-vacante.png" width="300"/>
-  <img src="./img/reclutador/crear-vacante2.png" width="300"/>
-  <img src="./img/reclutador/mis-vacantes.png" width="300"/>
-  <img src="./img/reclutador/notificaciones.png" width="300"/>
-  <img src="./img/reclutador/notificaciones-candidatos.png" width="300"/>
-  <img src="./img/reclutador/notificaciones-correo.png" width="300"/>
-  <img src="./img/reclutador/notificaciones-correo2.png" width="300"/>
-</p>
+<table align="center">
+  <tr>
+      <td><img src="./img/reclutador/crear-vacante.png" width="300"/></td>
+      <td><img src="./img/reclutador/crear-vacante2.png" width="300"/></td>
+      <td><img src="./img/reclutador/mis-vacantes.png" width="300"/></td>
+      <td><img src="./img/reclutador/notificaciones.png" width="300"/></td>
+      <td><img src="./img/reclutador/notificaciones-candidatos.png" width="300"/></td>
+      <td><img src="./img/reclutador/notificaciones-correo.png" width="300"/></td>
+      <td><img src="./img/reclutador/notificaciones-correo2.png" width="300"/></td>
+  </tr>
+</table>
 
 <h2 align="center">Vistas Candidato</h2>
 
-<p align="center">
-   <img src="./img/candidato/home.png" width="300"/>
-   <img src="./img/candidato/home2.png" width="300"/>
-   <img src="./img/candidato/ver-vacante.png" width="300"/>
-</p>
+<table align="center">
+   <tr>
+      <td><img src="./img/candidato/home.png" width="300"/></td>
+      <td><img src="./img/candidato/home2.png" width="300"/></td>
+      <td><img src="./img/candidato/ver-vacante.png" width="300"/></td>
+   </tr>
+</table>
 
 <h2 align="center">Edicion de Perfil</h2>
 
-<p align="center">
-   <img src="./img/perfil.png" width="300"/>
-   <img src="./img/perfil2.png" width="300"/>
-<p>
+<table align="center">
+   <tr>
+      <td><img src="./img/perfil.png" width="300"/></td>
+      <td><img src="./img/perfil2.png" width="300"/></td>
+   </tr>
+</table>
 
 ## Funcionalidades principales
 
