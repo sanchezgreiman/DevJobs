@@ -10,11 +10,13 @@ Plataforma de reclutamiento IT construida con **Laravel 11**, **Livewire 3** y *
       <td><img src="./img/reclutador/crear-vacante.png" width="300"/></td>
       <td><img src="./img/reclutador/crear-vacante2.png" width="300"/></td>
       <td><img src="./img/reclutador/mis-vacantes.png" width="300"/></td>
+   </tr>
+   <tr>
       <td><img src="./img/reclutador/notificaciones.png" width="300"/></td>
       <td><img src="./img/reclutador/notificaciones-candidatos.png" width="300"/></td>
       <td><img src="./img/reclutador/notificaciones-correo.png" width="300"/></td>
+   </tr>
       <td><img src="./img/reclutador/notificaciones-correo2.png" width="300"/></td>
-  </tr>
 </table>
 
 <h2 align="center">Vistas Candidato</h2>
